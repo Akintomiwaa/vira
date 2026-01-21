@@ -19,19 +19,19 @@ const Hero = () => {
         }}>
 
             {/* Top Graphic Text Bar */}
-            <div className="container" style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr auto 1fr',
-                alignItems: 'center',
-                textTransform: 'uppercase',
-                fontSize: '0.8rem',
-                fontWeight: 'bold',
-                letterSpacing: '1px',
-                color: '#333',
-                marginBottom: '4rem',
-                marginTop: '2rem'
-            }}>
-                <span style={{ textAlign: 'left' }}>Move Comfortably</span>
+            {/* Top Graphic Text Bar */}
+            <div className="container hero-top-text" style={{
+                display: "grid",
+                gridTemplateColumns: "1fr auto 1fr",
+                alignItems: "center",
+                textTransform: "uppercase",
+                fontSize: "0.8rem",
+                fontWeight: "bold",
+                letterSpacing: "1px",
+                color: "#333",
+                marginBottom: "4rem",
+                marginTop: "2rem"
+            }}>                <span style={{ textAlign: 'left' }}>Move Comfortably</span>
                 <span style={{ textAlign: 'center' }}>Live Freely</span>
                 <span style={{ textAlign: 'right' }}>Feel Confident</span>
             </div>
@@ -39,14 +39,15 @@ const Hero = () => {
             <div className="container" style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
                 {/* Massive Text Layer */}
+                {/* Massive Text Layer */}
                 <motion.div
+                    className="hero-title-mobile"
                     style={{
-                        position: 'relative',
+                        position: "relative",
                         zIndex: 1,
-                        width: '100%',
+                        width: "100%",
                         y: yText
-                    }}
-                >
+                    }}>                >
                     <h1 style={{
                         fontFamily: 'var(--font-display)',
                         fontSize: 'clamp(5rem, 18vw, 16rem)',
@@ -98,12 +99,13 @@ const Hero = () => {
 
                     {/* Center Model Image */}
                     <motion.div
+                        className="hero-image-container"
                         style={{
-                            position: 'relative',
+                            position: "relative",
                             zIndex: 3,
-                            height: '100%',
+                            height: "100%",
                             y: yImage
-                        }}
+                        }}>                        }}
                     >
                         <img
                             src={heroImage}

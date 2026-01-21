@@ -139,3 +139,41 @@ ul {
     display: none !important;
   }
 }
+
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: none !important;
+  }
+
+  /* Hero Top Text */
+  .hero-top-text {
+    font-size: 0.6rem !important;
+    white-space: nowrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Hero Title */
+  .hero-title-mobile h1 {
+    font-size: clamp(3rem, 15vw, 6rem) !important; 
+    margin-top: 5vh;
+  }
+
+  /* Hero Image */
+  .hero-image-container {
+    margin: 0 1rem;
+    height: 50vh !important;
+    margin-top: 2rem !important;
+  }
+  
+  .hero-image-mobile {
+    border-radius: 20px !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+}
