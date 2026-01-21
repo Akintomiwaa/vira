@@ -68,7 +68,7 @@ const Hero = () => {
                     position: 'relative',
                     width: '100%',
                     height: '600px',
-                    marginTop: '-5vw',
+                    marginTop: '5vh',
                     display: 'flex',
                     justifyContent: 'center'
                 }}>
@@ -94,8 +94,7 @@ const Hero = () => {
                             color: '#f0ece6',
                             zIndex: -1,
                             lineHeight: 0
-                        }}>*</div>
-                    </div>
+                        }} className="mobile-hidden">*</div>                    </div>
 
                     {/* Center Model Image */}
                     <motion.div
@@ -105,6 +104,7 @@ const Hero = () => {
                             height: '100%',
                             y: yImage
                         }}
+                        className="mobile-hidden"
                     >
                         <img
                             src={heroImage}
@@ -115,10 +115,10 @@ const Hero = () => {
                                 objectFit: 'cover',
                                 mixBlendMode: 'normal',
                                 borderRadius: '16px',
-                                boxShadow: '0 20px 40px rgba(0,0,0,0.2)'
+                                boxShadow: "0 20px 40px rgba(0,0,0,0.2)"
                             }}
-                        />
-                    </motion.div>
+                            className="mobile-hidden"
+                        />                    </motion.div>
 
                     {/* Right Floating Product Card */}
                     <motion.div
@@ -130,8 +130,9 @@ const Hero = () => {
                             right: '5%',
                             top: '15%',
                             width: '220px',
-                            zIndex: 4,
-                        }}
+                            zIndex: 4 }}
+
+                        className="mobile-hidden"
                     >
                         <div style={{
                             background: 'rgba(255,255,255,0.2)',
@@ -139,9 +140,8 @@ const Hero = () => {
                             padding: '10px',
                             borderRadius: '12px',
                             border: '1px solid rgba(255,255,255,0.4)',
-                            boxShadow: '0 20px 40px rgba(0,0,0,0.1)'
-                        }}>
-                            <div style={{ background: '#333', color: 'white', padding: '0.5rem', borderRadius: '8px 8px 0 0', fontWeight: 'bold', fontSize: '0.8rem', display: 'flex', justifyContent: 'space-between' }}>
+                            boxShadow: "0 20px 40px rgba(0,0,0,0.1)"
+                        }} className="mobile-hidden">                            <div style={{ background: '#333', color: 'white', padding: '0.5rem', borderRadius: '8px 8px 0 0', fontWeight: 'bold', fontSize: '0.8rem', display: 'flex', justifyContent: 'space-between' }}>
                                 <span>AUTUMN HOODIE</span>
                                 <span>:</span>
                             </div>
@@ -167,31 +167,10 @@ const Hero = () => {
                     left: '50%',
                     transform: 'translateX(-50%)'
                 }}>
-                    <button style={{
-                        background: 'var(--color-accent)',
-                        color: 'white',
-                        border: 'none',
-                        padding: '1rem 2rem',
-                        borderRadius: '50px',
-                        fontWeight: 'bold',
-                        textTransform: 'uppercase',
-                        cursor: 'pointer',
-                        boxShadow: '0 10px 20px rgba(255,59,15,0.3)'
-                    }}>
-                        Shop The Collection
-                    </button>
-                    <button style={{
-                        background: 'rgba(255, 255, 255, 0.4)',
-                        backdropFilter: 'blur(10px)',
-                        color: 'var(--color-dark)',
-                        border: '1px solid rgba(255, 255, 255, 0.8)',
-                        padding: '1rem 2rem',
-                        borderRadius: '50px',
-                        fontWeight: 'bold',
-                        textTransform: 'uppercase',
-                        cursor: 'pointer'
-                    }}>
-                        Explore New Arrivals
+                    <button className="btn-glow">
+                        <div className="btn-glow-content">
+                            Shop The Collection
+                        </div>
                     </button>
                 </div>
 

@@ -39,7 +39,7 @@ const BrandStory = () => {
                                 fontFamily: 'var(--font-display)',
                                 fontSize: '3rem',
                                 textTransform: 'uppercase',
-                                lineHeight: 0.9,
+                                lineHeight: 1.1,
                                 color: '#111',
                                 margin: 0
                             }}>
@@ -207,7 +207,7 @@ const BrandStory = () => {
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '3rem',
                                         textTransform: 'uppercase',
-                                        lineHeight: 0.9,
+                                        lineHeight: 1.1,
                                         margin: 0,
                                         letterSpacing: '-1px',
                                         color: '#111'

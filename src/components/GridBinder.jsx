@@ -47,7 +47,7 @@ const GridBinder = () => {
                         fontSize: 'clamp(3rem, 5vw, 4.5rem)',
                         marginTop: '1rem',
                         textTransform: 'uppercase',
-                        lineHeight: 0.9
+                        lineHeight: 1.1
                     }}>
                         Clothes That Fit Your Life
                     </h2>

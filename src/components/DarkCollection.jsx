@@ -77,7 +77,7 @@ const DarkCollection = () => {
                             fontFamily: 'var(--font-display)',
                             fontSize: 'clamp(2.5rem, 4.5vw, 4.5rem)', // Scaled down
                             textTransform: 'uppercase',
-                            lineHeight: 0.9,
+                            lineHeight: 1.1,
                             marginBottom: '0',
                             letterSpacing: '1px'
                         }}>
