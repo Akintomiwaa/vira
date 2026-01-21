@@ -104,7 +104,6 @@ const Hero = () => {
                             height: '100%',
                             y: yImage
                         }}
-                        className="mobile-hidden"
                     >
                         <img
                             src={heroImage}
@@ -117,7 +116,6 @@ const Hero = () => {
                                 borderRadius: '16px',
                                 boxShadow: "0 20px 40px rgba(0,0,0,0.2)"
                             }}
-                            className="mobile-hidden"
                         />                    </motion.div>
 
                     {/* Right Floating Product Card */}
